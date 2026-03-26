@@ -1,0 +1,18 @@
+{
+  "requires": {
+    "db": {
+      "kind": "hana",
+      "model": [
+        "db"
+      ],
+      "credentials": {
+        "schema": "474897BDE96B418FA88BDA4D46964703",
+        "user": "474897BDE96B418FA88BDA4D46964703_867BXXGRC255T31S0DGVN6S52_RT",
+        "password": "P#~@J( WlQAZ[=Qa_i]g9RG?gP,_=8|.:6*P{bPNE~D#`ZpRTO4cA&rSw}3!*)~;=IK?.NSjpP=[HL)K~5O_iP9naOLBBCL|pc=n)RFLyowJOz1CJ&??;+47CS1=/%ay",
+        "host": "28733d6d-1159-45b0-8d45-043f9212145f.hna1.prod-us10.hanacloud.ondemand.com",
+        "port": "443",
+        "url": "jdbc:sap://28733d6d-1159-45b0-8d45-043f9212145f.hna1.prod-us10.hanacloud.ondemand.com:443?encrypt=true&validateCertificate=true&currentschema=474897BDE96B418FA88BDA4D46964703"
+      }
+    }
+  }
+}

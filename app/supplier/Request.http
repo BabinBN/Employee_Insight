@@ -1,0 +1,44 @@
+POST http://localhost:4004/odata/v4/admin/Product
+Content-Type: application/json
+
+{
+  "productCode": "PRD003",
+  "name": "Samsung 55 inch Smart TV",
+  "category": "Electronics",
+  "price": 750.00,
+  "stockQuantity": 15,
+  "status": "Available"
+}
+
+###
+PATCH http://localhost:4004/odata/v4/admin/Product(94702e46-a4b9-4f7b-9339-539a57ac8a50)
+Content-Type: application/json
+
+{
+  "criticality": 1
+}
+###
+
+POST http://localhost:4004/odata/v4/admin/Supplier
+Content-Type: application/json
+
+{
+  "supplierCode": "SUP002",
+  "supplierName": "Al Noor Trading LLC",
+  "contactPerson": "Ahmed Hassan",
+  "email": "ahmed.hassan@alnoortrading.com",
+  "phone": "+971502345678",
+  "city": "Abu Dhabi",
+  "status": "Active"
+}
+
+###
+POST http://localhost:4004/odata/v4/admin/Item
+Content-Type: application/json
+
+{
+  "product_ID": "686aeadb-78b7-4aa7-b46e-50fe7ba7a68b",
+  "itemName": "TV Led",
+  "quantity": 10,
+  "itemPrice": 25
+}
