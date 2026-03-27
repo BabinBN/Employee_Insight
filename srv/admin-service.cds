@@ -1,14 +1,14 @@
-using {Products} from '../db/product-schema';
-using {Suppliers} from '../db/supplier-schema';
+using {Productsdb} from '../db/product-schema';
+using {Suppliersdb} from '../db/supplier-schema';
 
 
 service admin {
      @odata.draft.enabled
-    entity Product as projection on Products.Products;
+    entity Product as projection on Productsdb.Products;
     // @readonly
-    entity Item as projection on Products.ProductItems;
+    entity Item as projection on Productsdb.ProductItems;
      @odata.draft.enabled
-    entity Supplier as projection on Suppliers.Suppliers;
+    entity Supplier as projection on Suppliersdb.Suppliers;
 
 //     @cds.redirection.target
 //     entity Pro as select from db.Products {

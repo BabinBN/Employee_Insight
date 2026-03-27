@@ -1,20 +1,20 @@
-using {WorkforceInsights} from '../db/employee-schema';
+using {employeedb} from '../db/employee-schema';
 
 
-service EmployeeService  {
-    @readonly
-    entity employee as projection on WorkforceInsights.WorkforceInsights;
+service employee  {
+    entity employeedt as projection on employeedb.employee;
+    entity departments as projection on employeedb.Departments;
 
 }
 
-annotate EmployeeService.employee with @(
+// annotate employee.employeedt with @(
 
-  Aggregation.ApplySupported: {
-    Transformations: [
-      'aggregate',
-      'groupby',
-      'filter',
-      'topcount',
-      'bottomcount'
-    ]
-  })
+//   Aggregation.ApplySupported: {
+//     Transformations: [
+//       'aggregate',
+//       'groupby',
+//       'filter',
+//       'topcount',
+//       'bottomcount'
+//     ]
+//   })

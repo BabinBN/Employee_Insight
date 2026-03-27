@@ -1,4 +1,4 @@
-namespace Products;
+namespace Productsdb;
 using {  managed } from '@sap/cds/common';
 
 @Aggregation.ApplySupported: {

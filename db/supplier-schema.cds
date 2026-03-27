@@ -1,4 +1,4 @@
-namespace Suppliers;
+namespace Suppliersdb;
 using {  managed } from '@sap/cds/common';
 
 

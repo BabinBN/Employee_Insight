@@ -1,1 +1,0 @@
-using admin as service from '../../srv/admin-service';

@@ -42,3 +42,25 @@ Content-Type: application/json
   "quantity": 10,
   "itemPrice": 25
 }
+
+###
+
+POST http://localhost:4004/odata/v4/employee/employeedt
+Content-Type: application/json
+
+{
+  "ID": "550e8400-e29b-41d4-a716-446655440100",
+  "employeeId": "EMP100",
+  "employeeName": "Rahul Kumar",
+  "department": "IT",
+  "designation": "Software Engineer",
+  "joiningDate": "2023-06-15",
+  "salary": 75000.00,
+  "bonus": 5000.00,
+  "performanceRating": 4,
+  "attendancePercent": 96.50,
+  "overtimeHours": 12.5,
+  "leaveDaysTaken": 3,
+  "workMode": "Hybrid",
+  "location": "Bangalore"
+}

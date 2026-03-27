@@ -10,6 +10,7 @@
   "sapux": [
     "app/employee_insights",
     "app/supplier",
+    "app/workforce_insights",
     "app/workforce_insights"
   ],
   "dependencies": {
