@@ -44,9 +44,9 @@ annotate service.Product with @(
         },
         {
             $Type : 'UI.ReferenceFacet',
-            Label : '{i18n>Employeeinfo}',
-            ID : 'i18nEmployeeinfo',
-            Target : '@UI.FieldGroup#i18nEmployeeinfo',
+            Label : '{i18n>ProductInfo}',
+            ID : 'ProductInfo',
+            Target : '@UI.FieldGroup#ProductInfo',
         },
         {
             $Type : 'UI.ReferenceFacet',
@@ -63,7 +63,7 @@ annotate service.Product with @(
         },
         {
             $Type : 'UI.DataField',
-            Label : '{i18n>Name1}',
+            Label : '{i18n>Name}',
             Value : name,
         },
         {
@@ -83,9 +83,9 @@ annotate service.Product with @(
         },
     ],
     UI.SelectionFields : [
-        name,
         productCode,
         status,
+        name,
     ],
     UI.FieldGroup #i18nEmployeeinfo : {
         $Type : 'UI.FieldGroupType',
@@ -98,7 +98,7 @@ annotate service.Product with @(
             {
                 $Type : 'UI.DataField',
                 Value : name,
-                Label : '{i18n>Name2}',
+                Label : '{i18n>Name}',
             },
             {
                 $Type : 'UI.DataField',
@@ -123,12 +123,7 @@ annotate service.Product with @(
         Title : 'name',
     },
     UI.HeaderFacets : [
-        {
-            $Type : 'UI.ReferenceFacet',
-            Label : '    ',
-            ID : '_',
-            Target : '@UI.FieldGroup#_',
-        },
+        
     ],
     UI.DataPoint #price1 : {
         Value : price,
@@ -260,11 +255,29 @@ annotate service.Product with @(
         $Type : 'Communication.ContactType',
         fn : category,
     },
+    UI.FieldGroup #ProductInfo : {
+        $Type : 'UI.FieldGroupType',
+        Data : [
+            {
+                $Type : 'UI.DataField',
+                Value : productCode,
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : price,
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : stockQuantity,
+                Label : '{i18n>Stockquantity}',
+            },
+        ],
+    },
     );
 
 annotate service.Product with {
     name @(
-        Common.Label : '{i18n>Name2}',
+        Common.Label : '{i18n>Name}',
         )
 };
 

@@ -13,13 +13,18 @@ entity Products : managed {
     productCode   : String(50);
 
     @Analytics.Dimension
+    @mandatory
+    @Common.Label :'Name'
     name          : String(150);
     
     @Analytics.Dimension
+     @Common.Label :'Category'
     category      : String(100);
 
     @Analytics.Measure
     @Aggregation.default: #SUM
+    @mandatory
+    @Common.Label :'Price'
     price         : Decimal(15,2);
 
     @Analytics.Measure
@@ -27,6 +32,7 @@ entity Products : managed {
     stockQuantity : Integer;
 
     @Analytics.Dimension
+   @Common.Label :'Status'
     status        : String(30);
     
     @Analytics.Dimension

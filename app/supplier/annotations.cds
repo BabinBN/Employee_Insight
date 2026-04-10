@@ -5,37 +5,37 @@ annotate service.Supplier with @(
         Data : [
             {
                 $Type : 'UI.DataField',
-                Label : 'supplierCode',
+                Label : '{i18n>Suppliercode}',
                 Value : supplierCode,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'supplierName',
+                Label : '{i18n>Suppliername}',
                 Value : supplierName,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'contactPerson',
+                Label : '{i18n>Contactperson}',
                 Value : contactPerson,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'email',
+                Label : '{i18n>Email}',
                 Value : email,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'phone',
+                Label : '{i18n>Phone}',
                 Value : phone,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'city',
+                Label : '{i18n>City}',
                 Value : city,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'status',
+                Label : '{i18n>Status1}',
                 Value : status,
             },
         ],

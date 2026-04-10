@@ -2,7 +2,8 @@ using {Productsdb} from '../db/product-schema';
 using {Suppliersdb} from '../db/supplier-schema';
 
 
-service admin {
+// service admin @(path:'/admins') {
+    service admin {
      @odata.draft.enabled
     entity Product as projection on Productsdb.Products;
     // @readonly
