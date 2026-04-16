@@ -13,6 +13,11 @@
         "port": "443",
         "url": "jdbc:sap://28733d6d-1159-45b0-8d45-043f9212145f.hna1.prod-us10.hanacloud.ondemand.com:443?encrypt=true&validateCertificate=true&currentschema=474897BDE96B418FA88BDA4D46964703"
       }
-    }
+    },
+    "[production]": {
+      "auth": "xsuaa"
+    },
+    "connectivity": true,
+    "destinations": true
   }
 }
